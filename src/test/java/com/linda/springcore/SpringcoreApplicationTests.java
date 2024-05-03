@@ -1,4 +1,4 @@
-package com.example.springcore;
+package com.linda.springcore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
