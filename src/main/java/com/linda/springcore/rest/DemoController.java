@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
     private Coach myCoach;
    @Autowired
+
    public DemoController(@Qualifier("baseballCoach") Coach theCoach){
+
        myCoach = theCoach;
 
    }
