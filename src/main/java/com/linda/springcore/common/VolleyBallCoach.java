@@ -1,13 +1,13 @@
-package com.example.springcore;
+package com.linda.springcore.common;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
 @Component
-public class CricketCoach implements Coach{
+public class VolleyBallCoach implements Coach{
 
     @Override
     public String getDailyWorkout(){
-        return "Practice bawling in 15 minutes";
+        return "Practise Volley all day";
     }
 }

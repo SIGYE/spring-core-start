@@ -1,6 +1,8 @@
-package com.example.springcore;
+package com.linda.springcore.rest;
 
+import com.linda.springcore.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,10 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
     private Coach myCoach;
-    @Autowired
-    public DemoController(Coach theCoach){
-        myCoach = theCoach;
-    }
+   @Autowired
+   public DemoController(@Qualifier("baseballCoach") Coach theCoach){
+       myCoach = theCoach;
+
+   }
     @GetMapping("/dailyWorkout")
     public String getDailyWorkout(){
         return myCoach.getDailyWorkout();
