@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 
 @Component
 @Primary
+
 public class VolleyBallCoach implements Coach{
 
     @Override
